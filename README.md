@@ -6,70 +6,70 @@ Javeats Lite is a modular food delivery management system built with Spring Boot
 # Project Structure
 Javeats_Lite/
 ├── docs/
-│   ├── ERD.pdf                         # Entity-Relationship Diagram
-│   └── README.md                       # Project description and setup instructions
+│   ├── ERD.pdf                         
+│   └── README.md                      
 ├── scripts/
-│   ├── seed_data.sql                   # SQL script to seed initial data
-│   └── utility_functions.sql           # SQL script with utility functions
+│   ├── seed_data.sql                  
+│   └── utility_functions.sql          
 ├── src/
 │   ├── main/
 │   │   ├── java/
 │   │   │   ├── com/
 │   │   │   │   ├── javeats/
-│   │   │   │   │   ├── JaveatsLiteApplication.java   # Main application entry point
+│   │   │   │   │   ├── JaveatsLiteApplication.java   
 │   │   │   │   │   ├── config/
 │   │   │   │   │   ├── entity/
-│   │   │   │   │   │   ├── User.java                 # User entity class
-│   │   │   │   │   │   ├── UserStatus.java           # UserStatus entity class
-│   │   │   │   │   │   ├── UserType.java             # UserType entity class
-│   │   │   │   │   │   ├── Role.java                 # Role entity class
-│   │   │   │   │   │   ├── ...                       # Other entity classes
+│   │   │   │   │   │   ├── User.java                
+│   │   │   │   │   │   ├── UserStatus.java          
+│   │   │   │   │   │   ├── UserType.java            
+│   │   │   │   │   │   ├── Role.java                 
+│   │   │   │   │   │   ├── ...                       
 │   │   │   │   │   ├── repository/
-│   │   │   │   │   │   ├── UserRepository.java       # User repository interface
-│   │   │   │   │   │   ├── RoleRepository.java       # Role repository interface
-│   │   │   │   │   │   ├── ...                       # Other repository interfaces
+│   │   │   │   │   │   ├── UserRepository.java       
+│   │   │   │   │   │   ├── RoleRepository.java       
+│   │   │   │   │   │   ├── ...                       
 │   │   │   │   │   ├── service/
-│   │   │   │   │   │   ├── UserService.java          # User service class
-│   │   │   │   │   │   ├── RoleService.java          # Role service class
-│   │   │   │   │   │   ├── ...                       # Other service classes
+│   │   │   │   │   │   ├── UserService.java         
+│   │   │   │   │   │   ├── RoleService.java        
+│   │   │   │   │   │   ├── ...                       
 │   │   │   │   │   ├── controller/
-│   │   │   │   │   │   ├── UserController.java       # User controller class
-│   │   │   │   │   │   ├── RoleController.java       # Role controller class
-│   │   │   │   │   │   ├── ...                       # Other controller classes
+│   │   │   │   │   │   ├── UserController.java      
+│   │   │   │   │   │   ├── RoleController.java      
+│   │   │   │   │   │   ├── ...                       
 │   │   │   │   │   ├── dto/
-│   │   │   │   │   │   ├── UserDTO.java              # User Data Transfer Object
-│   │   │   │   │   │   ├── RoleDTO.java              # Role Data Transfer Object
-│   │   │   │   │   │   ├── ...                       # Other DTO classes
+│   │   │   │   │   │   ├── UserDTO.java             
+│   │   │   │   │   │   ├── RoleDTO.java             
+│   │   │   │   │   │   ├── ...                      
 │   │   │   │   │   └── util/
 │   │   │   └── resources/
-│   │   │       ├── application.properties            # Application properties file
+│   │   │       ├── application.properties            
 │   │   │       └── db-scripts/
-│   │   │           ├── V1__create_user_status.sql    # SQL script to create UserStatus table
-│   │   │           ├── V2__create_user_type.sql      # SQL script to create UserType table
-│   │   │           ├── V3__create_role.sql           # SQL script to create Role table
-│   │   │           ├── ...                           # Other SQL scripts
+│   │   │           ├── V1__create_user_status.sql   
+│   │   │           ├── V2__create_user_type.sql     
+│   │   │           ├── V3__create_role.sql          
+│   │   │           ├── ...                         
 │   └── test/
 │       ├── java/
 │       │   ├── com/
 │       │   │   ├── javeats/
 │       │   │   │   ├── entity/
-│       │   │   │   │   ├── UserTest.java             # User entity unit tests
-│       │   │   │   │   ├── ...                       # Other entity test classes
+│       │   │   │   │   ├── UserTest.java           
+│       │   │   │   │   ├── ...                     
 │       │   │   │   ├── repository/
-│       │   │   │   │   ├── UserRepositoryTest.java   # User repository unit tests
-│       │   │   │   │   ├── ...                       # Other repository test classes
+│       │   │   │   │   ├── UserRepositoryTest.java   
+│       │   │   │   │   ├── ...                       
 │       │   │   │   ├── service/
-│       │   │   │   │   ├── UserServiceTest.java      # User service unit tests
-│       │   │   │   │   ├── ...                       # Other service test classes
+│       │   │   │   │   ├── UserServiceTest.java      
+│       │   │   │   │   ├── ...                       
 │       │   │   │   ├── controller/
-│       │   │   │   │   ├── UserControllerTest.java   # User controller unit tests
-│       │   │   │   │   ├── ...                       # Other controller test classes
+│       │   │   │   │   ├── UserControllerTest.java   
+│       │   │   │   │   ├── ...                      
 │       │   │   │   ├── dto/
-│       │   │   │   │   ├── UserDTOTest.java          # UserDTO unit tests
-│       │   │   │   │   ├── ...                       # Other DTO test classes
+│       │   │   │   │   ├── UserDTOTest.java      
+│       │   │   │   │   ├── ...                     
 │       │   │   │   ├── util/
 │       └── resources/
-│           └── application-test.properties           # Test application properties file
-└── pom.xml                                           # Maven build file
+│           └── application-test.properties           
+└── pom.xml                                           
 
 
